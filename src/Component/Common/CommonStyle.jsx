@@ -1,9 +1,11 @@
 import styled from "@emotion/styled";
 
 export const total = styled.div`
-  padding-left: 3%;
-  padding-right: 3%;
-  height: max-content;
+  padding: 0px 3%;
+  min-height: 100vh;
+  min-width: 100vw;
+  box-sizing : border-box;
+  overflow-x : hidden;
 `;
 export const Flex = styled.div`
   display: flex;

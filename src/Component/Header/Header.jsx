@@ -1,6 +1,5 @@
 import React from "react";
 import * as h from "./HeaderStyle";
-import * as c from "../Common/CommonStyle";
 import GitLogo from "../../assets/img/github.svg";
 import Velog from "../../assets/img/velog.svg";
 

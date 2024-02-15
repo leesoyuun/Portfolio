@@ -5,11 +5,14 @@ const breakpoints = [480, 768, 992, 1280];
 const media = breakpoints.map((bp) => `@media (max-width: ${bp}px)`);
 
 export const total = styled.div`
+  position: fixed;
+  z-index: 10;
   display: flex;
-  justify-content: space-between;
-  padding: 36px 3% 30px 3%;
-  cursor: pointer;
   height: max-content;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 36px 6% 30px 6%;
+  cursor: pointer;
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
 `;
