@@ -1,0 +1,49 @@
+{
+    "project": {
+        "experience" : [
+            {
+                "date" : "2022.09 ~ 2023.04",
+                "descript" : "스타트업 리눅스긱 Fronted Developer"
+            },{
+                "date" : "2022.09 ~ 2023.07",
+                "descript" : "Google Developer Student Clubs Sangmyung 2nd Core"
+            },{
+                "date" : "2021.09 ~ 2022.07",
+                "descript" : "Google Developer Student Clubs Sangmyung 1st Core"
+            },{
+                "date" : "2021.03 ~ 2021.04",
+                "descript" : "모각코 한입 웹개발 JavaScript 수료"
+            }
+        ],
+        "award" : [
+            {
+                "date" : "2023.09",
+                "descript" : "GDGXWhatever 프로젝트 핵토콘상(1등)"
+            },{
+                "date" : "2022.07",
+                "descript" : "제 11회 대학생 작품경진대회 금상"
+            },{
+                "date" : "2021.07",
+                "descript" : "창의융복합 통합성과대회 대상"
+            },{
+                "date" : "2021.06",
+                "descript" : "창의융복합 통합성과대회 장려상"
+            }
+        ],
+        "announce": [
+            {
+                "date": "2023.01",
+                "descript": "GDSC 영상처리개념 및 활용방안 발표"
+            },{
+                "date" : "2021.11",
+                "descript": "GDSC DevFest ml5.js X sketch RNN 발표"
+            },{
+                "date" : "2021.11",
+                "descript": "캡스톤 디자인 성과교류호에서 웹기초를 사용한 반려동물 블로그 제작 발표"
+            },{
+                "date" : "2021.09",
+                "descript": "GDSC `How to use Git` 발표"
+            }
+        ] 
+    }
+}
