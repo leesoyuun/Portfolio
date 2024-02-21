@@ -21,6 +21,9 @@ export const Name = styled.div`
   font-size: 1.2rem;
   margin-left: ${(props)=>props.isEnName && '1.5rem'}
 `;
+export const DetailAboutMe = styled.div`
+  margin-top: 1rem;
+`;
 export const Title = styled.div`
   font-size: 1.1rem;
   font-weight: 400;

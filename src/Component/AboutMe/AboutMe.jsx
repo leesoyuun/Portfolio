@@ -1,7 +1,6 @@
 import React from "react";
 import * as c from "../Common/CommonStyle";
 import * as a from "./AboutMeStyle";
-import styled from "@emotion/styled";
 import AboutMeJson from "../../assets/json/AboutMe.json";
 
 const AboutMe = () => {
@@ -12,6 +11,7 @@ const AboutMe = () => {
           <a.Name>{`이소윤`}</a.Name>
           <a.Name isEnName={true}>{`LEESOYUN`}</a.Name>
         </c.Flex>
+        <a.DetailAboutMe>{`여기에 디테일한 소개 들어가야함.`}</a.DetailAboutMe>
         <a.Title>{`이력`}</a.Title>
         {AboutMeJson.project.experience.map((val) => (
           <c.Flex>
