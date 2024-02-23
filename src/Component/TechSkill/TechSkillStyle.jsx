@@ -51,12 +51,18 @@ export const LottieStyle = styled(Lottie)`
   overflow-y: hidden;
   position: absolute;
   right: 0;
+  /* top: 0;
+  margin-top:1px; */
+  
 `;
 export const Language = styled.div`
   font-weight: 500;
   font-size: 0.94rem;
   margin-top: 1rem;
   margin-bottom: 1px;
+`;
+export const Percent =styled(Language)`
+    color: #525252;
 `;
 export const ProgressBar = styled.div`
   width: 100%;
@@ -69,12 +75,14 @@ export const ProgressBar = styled.div`
   margin-bottom: 0.3rem;
 `;
 export const Progress = styled.div`
-  /* width: {(props)=>props.width}; */
+  width: ${(props)=>props.width};
   height: 8px;
   padding: 0;
   text-align: center;
   background-color: #4f98ff;
   color: #111;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
 `;
 export const FieldIcon = styled.img`
   width: 35px;

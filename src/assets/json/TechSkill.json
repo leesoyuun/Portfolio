@@ -1,0 +1,80 @@
+{
+  "techskill": {
+    "frontend": [
+      {
+        "techName": "HTML",
+        "percent": "100%"
+      },
+      {
+        "techName": "CSS",
+        "percent": "100%"
+      },
+      {
+        "techName": "JavaScript",
+        "percent": "75%"
+      },
+      {
+        "techName": "Jquery",
+        "percent": "75%"
+      },
+      {
+        "techName": "React",
+        "percent": "80%"
+      },
+      {
+        "techName": "Styled-components",
+        "percent": "100%"
+      },
+      {
+        "techName": "Emotion",
+        "percent": "85%"
+      },
+      {
+        "techName": "TailWind",
+        "percent": "85%"
+      },
+      {
+        "techName": "BootStrap",
+        "percent": "80%"
+      },
+      {
+        "techName": "Recoil",
+        "percent": "50%"
+      },
+      {
+        "techName": "PWA",
+        "percent": "60%"
+      },
+      {
+        "techName": "Lottie",
+        "percent": "75%"
+      },
+      {
+        "techName": "Chart.js",
+        "percent": "57%"
+      }
+    ],
+    "backend": [
+      { "techName": "SQL", "percent": "50%" },
+      { "techName": "Docker", "percent": "30%" }
+    ],
+    "application": [
+      { "techName": "Android Studio", "percent": "50%" },
+      {
+        "techName": "React Native",
+        "percent": "60%"
+      },
+      {
+        "techName": "Flutter",
+        "percent": "50%"
+      }
+    ],
+    "os": [{ "techName": "Linux", "percent": "55%" }],
+    "collaboration": [
+      { "techName": "Git & Github", "percent": "85%" },
+      { "techName": "Notion", "percent": "85%" },
+      { "techName": "Slack", "percent": "70%" },
+      { "techName": "Discord", "percent": "65%" }
+    ]
+  }
+}
