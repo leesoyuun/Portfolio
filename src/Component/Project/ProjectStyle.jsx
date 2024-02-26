@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { css } from "@emotion/css";
 
 const breakpoints = [480, 768, 992, 1280];
 const media = breakpoints.map((bp) => `@media (max-width: ${bp}px)`);
@@ -7,7 +6,7 @@ const media = breakpoints.map((bp) => `@media (max-width: ${bp}px)`);
 export const Center = styled.div`
   display: flex;
   justify-content: center;
-  padding: 0px 15% 5% 15%;
+  padding: 0px 20% 5% 20%;
   min-height: calc(100vh - 101px);
   width: 100%;
   ${media[2]} {
@@ -23,19 +22,24 @@ export const Headername = styled.div`
   font-weight: 700;
   font-size: 1.3rem;
 `;
+export const HeaderDescript = styled.div`
+  margin-top: 1rem;
+  color : #707070;
+  font-weight: 500;
+`;
 export const TotalProject = styled.div`
   display: flex;
   justify-content: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 5.3rem;
   ${media[1]} {
     flex-direction: column;
   }
 `;
 export const DetailProject = styled.div`
-  margin-left: 1.5rem;
-  width: calc((100vw - 1.5rem - 300px - 15%) / 2);
+  margin-left: 3rem;
+  max-width: calc((100vw - 12rem - 300px - 15%) / 2);
   display: flex;
   justify-content: center;
   align-items: center; /* Center vertically */
@@ -43,7 +47,7 @@ export const DetailProject = styled.div`
   ${media[2]} {
     margin-left: 1rem;
     margin-top: 1rem;
-    width: calc(100vw - 12% - 1.5rem);
+    /* width: calc(100vw - 10% - 1.5rem); */
   }
   ${media[1]} {
     margin-left: 0rem;
@@ -76,9 +80,10 @@ export const ProjectDescript = styled.div`
 `;
 export const ProjectImg = styled.img`
   width: 250px;
-  height: 250px;
+  height: auto;
   border-radius: 16px;
   padding: 10px;
+  cursor: pointer;
 `;
 export const Languages = styled.div`
   display: flex;

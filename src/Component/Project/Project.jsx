@@ -1,24 +1,31 @@
-import React from "react";
-import * as c from "../Common/CommonStyle";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import * as p from "./ProjectStyle";
 import ProjectJson from "../../assets/json/Project.json";
-import Test from "../../assets/img/Test.png";
 import Geeks from "../../assets/img/project/geeks/mainLogo.svg";
 import Ofi from "../../assets/img/project/ofi/ofi.png";
 import Portfolio from "../../assets/img/project/portfolio/portfolio.png";
 import Cheonan from "../../assets/img/project/cheonan/cheonanData.jpeg";
 import Music from "../../assets/img/project/music/music.jpeg";
 const Project = () => {
-  let TitleImg = [Geeks, Ofi,Portfolio, Cheonan,Music]
+  let TitleImg = [Geeks, Ofi,Portfolio, Cheonan,Music];
+  const navigate = useNavigate();
+  const handleClick = (projectName) => {
+    let name = projectName.split(' ');
+    name.pop();
+    let urlName = name.join('');
+    navigate('/project/'+urlName);
+  }
   return (
     <p.Center>
       <p.Whole>
         <p.Headername>{`PROJECT`}</p.Headername>
+        <p.HeaderDescript>{`프로젝트 이름 및 이미지를 클릭하시면 디테일한 설명을 보실 수 있습니다:)`}</p.HeaderDescript>
         {ProjectJson.project.map((project,index) => (
           <p.TotalProject>
-            <p.ProjectImg src={TitleImg[index]} />
+            <p.ProjectImg src={TitleImg[index]} onClick={()=>handleClick(project.name)}/>
             <p.DetailProject>
-              <p.ProjectName>{project.name}</p.ProjectName>
+              <p.ProjectName onClick={()=>handleClick(project.name)}>{project.name}</p.ProjectName>
               <p.ProjectDescript>{project.description}</p.ProjectDescript>
               <p.Languages>
               {project.useLanguage?.map((language) => (
