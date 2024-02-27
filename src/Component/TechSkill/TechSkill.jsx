@@ -5,7 +5,7 @@ import Bracket from "../../assets/img/techSkill/bracket.png";
 import Arrow from "../../assets/img/techSkill/arrow.json";
 import Application from "../../assets/img/techSkill/phone.svg";
 import OS from "../../assets/img/techSkill/linux.svg";
-import Collaboration from "../../assets/img/techSkill/collaboration.png";
+import Collaboration from "../../assets/img/techSkill/collaboration.svg";
 import TechSkillJson from "../../assets/json/TechSkill.json";
 
 const TechSkill = () => {
@@ -28,15 +28,15 @@ const TechSkill = () => {
           {isOpen &&
             field === "fe" &&
             TechSkillJson.techskill.frontend.map((techInfo) => (
-              <>
+              <t.Slide isOpen={isOpen}>
                 <c.FlexBetween>
                   <t.Language>{techInfo.techName}</t.Language>
                   <t.Percent>{techInfo.percent}</t.Percent>
                 </c.FlexBetween>
                 <t.ProgressBar>
-                  <t.Progress width={techInfo.percent} />
+                  <t.Progress percent={techInfo.percent} />
                 </t.ProgressBar>
-              </>
+              </t.Slide>
             ))}
         </t.TechBox>
         <t.TechBox onClick={() => handleOpen("be")}>
@@ -54,7 +54,7 @@ const TechSkill = () => {
                   <t.Percent>{techInfo.percent}</t.Percent>
                 </c.FlexBetween>
                 <t.ProgressBar>
-                  <t.Progress width={techInfo.percent} />
+                  <t.Progress percent={techInfo.percent} />
                 </t.ProgressBar>
               </>
             ))}
@@ -74,7 +74,7 @@ const TechSkill = () => {
                   <t.Percent>{techInfo.percent}</t.Percent>
                 </c.FlexBetween>
                 <t.ProgressBar>
-                  <t.Progress width={techInfo.percent} />
+                  <t.Progress percent={techInfo.percent} />
                 </t.ProgressBar>
               </>
             ))}
@@ -94,7 +94,7 @@ const TechSkill = () => {
                   <t.Percent>{techInfo.percent}</t.Percent>
                 </c.FlexBetween>
                 <t.ProgressBar>
-                  <t.Progress width={techInfo.percent} />
+                  <t.Progress percent={techInfo.percent} />
                 </t.ProgressBar>
               </>
             ))}
@@ -114,7 +114,7 @@ const TechSkill = () => {
                   <t.Percent>{techInfo.percent}</t.Percent>
                 </c.FlexBetween>
                 <t.ProgressBar>
-                  <t.Progress width={techInfo.percent} />
+                  <t.Progress percent={techInfo.percent} />
                 </t.ProgressBar>
               </>
             ))}

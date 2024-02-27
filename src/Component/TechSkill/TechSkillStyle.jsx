@@ -28,7 +28,6 @@ export const TotalTechSkill = styled.div`
 `;
 export const TechBox = styled.div`
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
   border: 1px solid #d0d0d0;
@@ -53,7 +52,10 @@ export const LottieStyle = styled(Lottie)`
   right: 0;
   /* top: 0;
   margin-top:1px; */
-  
+`;
+export const Slide = styled.div`
+  opacity: ${(props) => (props.isOpen ? 1 : 0)};
+  transition: opacity 10s ease-in-out, height 1s ease-in-out;
 `;
 export const Language = styled.div`
   font-weight: 500;
@@ -63,6 +65,18 @@ export const Language = styled.div`
 `;
 export const Percent =styled(Language)`
     color: #525252;
+`;
+const slideAnimation = (width) => `
+  @keyframes slide {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: ${width}%;
+    }
+  }
+
+  animation: slide 1s ease-out;
 `;
 export const ProgressBar = styled.div`
   width: 100%;
@@ -75,7 +89,7 @@ export const ProgressBar = styled.div`
   margin-bottom: 0.3rem;
 `;
 export const Progress = styled.div`
-  width: ${(props)=>props.width};
+  width: ${(props)=>props.percent};
   height: 8px;
   padding: 0;
   text-align: center;
@@ -83,6 +97,7 @@ export const Progress = styled.div`
   color: #111;
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
+  ${(props) => slideAnimation(props.percent)};
 `;
 export const FieldIcon = styled.img`
   width: 35px;
