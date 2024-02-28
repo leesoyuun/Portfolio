@@ -2,6 +2,8 @@ import React from "react";
 import * as c from "../Common/CommonStyle";
 import * as a from "./AboutMeStyle";
 import AboutMeJson from "../../assets/json/AboutMe.json";
+import Email from "../../assets/img/common/email.svg";
+import Github from "../../assets/img/github.svg";
 
 const AboutMe = () => {
   return (
@@ -11,7 +13,19 @@ const AboutMe = () => {
           <a.Name>{`이소윤`}</a.Name>
           <a.Name isEnName={true}>{`LEESOYUN`}</a.Name>
         </c.Flex>
-        <a.DetailAboutMe>{`여기에 디테일한 소개 들어가야함.`}</a.DetailAboutMe>
+        <c.Flex>
+          <a href="mailto:leesoyun4206@icloud.com" style={{ display: "flex", alignItems: "center", color : "#333", textDecoration : "none", marginBottom : "10px" }}>
+            <a.Icon src={Email}/>
+            <a.InfoText>{`leesoyun4206@icloud.com`}</a.InfoText>
+          </a>
+        </c.Flex>
+        <c.Flex>
+          <a href="https://github.com/leesoyuun" target="_blank" style={{ display: "flex", alignItems: "center", color : "#333", textDecoration : "none" }}>
+            <a.Icon src={Github}/>
+            <a.InfoText>{`@leesoyuun`}</a.InfoText>
+          </a>
+        </c.Flex>
+        <a.DetailAboutMe>{`안녕하세요. 소통을 중심으로 더 나은 코드를 구현하는 프론트엔드 개발자 이소윤입니다.\ndddd`}</a.DetailAboutMe>
         <a.Title>{`이력`}</a.Title>
         {AboutMeJson.project.experience.map((val) => (
           <c.Flex>

@@ -1,4 +1,6 @@
 import styled from "@emotion/styled";
+
+
 const breakpoints = [480, 768, 992, 1280];
 const media = breakpoints.map((bp) => `@media (max-width: ${bp}px)`);
 
@@ -19,10 +21,24 @@ export const Whole = styled.div`
 export const Name = styled.div`
   font-weight: bold;
   font-size: 1.2rem;
-  margin-left: ${(props)=>props.isEnName && '1.5rem'}
+  margin-left: ${(props)=>props.isEnName && '1.5rem'};
+  margin-bottom: 1.6rem;
+`;
+
+export const Icon = styled.img`
+  width: 30px;
+  height: 30px;
+`;
+export const InfoText = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
 `;
 export const DetailAboutMe = styled.div`
   margin-top: 1rem;
+  white-space: pre-wrap;
+  line-height: 1.3rem;
 `;
 export const Title = styled.div`
   font-size: 1.1rem;
