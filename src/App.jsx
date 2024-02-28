@@ -1,15 +1,14 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Main from "./pages/Main/Main";
-import AboutMe from './Component/AboutMe/AboutMe';
-
+import ProjectDetail from './Component/Project/ProjectDetail';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Main/>} />
-        <Route path="/aboutme" element={<AboutMe/>} />
+        <Route path='/project/:projectParamsName' element={<ProjectDetail/>}/>
       </Routes>
     </Router>
   );
