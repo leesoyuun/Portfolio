@@ -59,8 +59,8 @@
           "detail": "개인프로젝트"
         },{
           "title" : "사용기술 🛠️",
-          "detail" : "React, Emotion, Figma, Vite, StoryBook, Lottie",
-          "useReason": ["Webpack을 사용하여 속도가 느렸던 CRA대신에 Esbuild기반으로 제작된Vite를 사용하였습니다.","스토리북관련 내용 작성 "]
+          "detail" : "React, Emotion, Figma, Vite, JSON, Lottie",
+          "useReason": ["Webpack을 사용하여 속도가 느렸던 CRA대신에 Esbuild기반으로 제작된Vite를 사용하였습니다.","JSON으로 내용을 관리하여 중복되는 페이지를 최소한으로 줄였습니다."]
         },{
           "title" : "배운점 📖",
           "detail" : "스토리북 관련이야기 작성 예정 또한, 가급적 라이브러리를 사용하지않고 직접 구현하려고 했던 첫 프로젝트였습니다. 라이브러리 대신 직접 구현함으로 어떤 방식대로 진행되는지 몸소 경험할 수있었던 프로젝트였습니다."
