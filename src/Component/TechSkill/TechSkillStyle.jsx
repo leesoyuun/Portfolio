@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { keyframes } from "@emotion/react";
 import Lottie from "lottie-react";
 const breakpoints = [480, 768, 992, 1280];
 const media = breakpoints.map((bp) => `@media (max-width: ${bp}px)`);
@@ -50,21 +51,23 @@ export const LottieStyle = styled(Lottie)`
   overflow-y: hidden;
   position: absolute;
   right: 0;
-  /* top: 0;
-  margin-top:1px; */
+  transform: ${(props) => (props.isOpen ? 'rotate(180deg)' : 'none')};
 `;
+
 export const Slide = styled.div`
-  opacity: ${(props) => (props.isOpen ? 1 : 0)};
-  transition: opacity 10s ease-in-out, height 1s ease-in-out;
+  height: '0';
+  overflow: 'hidden';
+  transition: 'height 0.3s ease-in-out';
 `;
+
 export const Language = styled.div`
   font-weight: 500;
   font-size: 0.94rem;
   margin-top: 1rem;
   margin-bottom: 1px;
 `;
-export const Percent =styled(Language)`
-    color: #525252;
+export const Percent = styled(Language)`
+  color: #525252;
 `;
 const slideAnimation = (width) => `
   @keyframes slide {
@@ -89,11 +92,11 @@ export const ProgressBar = styled.div`
   margin-bottom: 0.3rem;
 `;
 export const Progress = styled.div`
-  width: ${(props)=>props.percent};
+  width: ${(props) => props.percent};
   height: 8px;
   padding: 0;
   text-align: center;
-  background-color: #4f98ff;
+  background-color: #949494;
   color: #111;
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
