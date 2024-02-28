@@ -1,7 +1,8 @@
 import styled from "@emotion/styled";
 const breakpoints = [480, 768, 992, 1280];
 const media = breakpoints.map((bp) => `@media (max-width: ${bp}px)`);
-import Leesoyuun from "../../assets/img/Test.png";
+import Leesoyuun from "../../assets/img/introduce/leesoyuun.jpeg";
+import Leesoyuun2 from "../../assets/img/introduce/leesoyuun2.jpeg";
 
 export const Whole = styled.div`
   display: flex;
@@ -51,7 +52,7 @@ export const LiquidShape = styled.div`
   border: 2px solid black;
   width: 250px;
   height: 250px;
-  background-image: url(${Leesoyuun});
+  background-image: url(${Leesoyuun2});
   background-size: cover;
   animation: liquid 8s ease-in-out infinite;
 
