@@ -3,20 +3,25 @@
     {
       "name": "Geeks 🏠",
       "description" : "Geeks는 상명대학교 학생들을 위한 기숙사 커뮤니티 어플로, 빠르고 효율적으로 적합한 룸메이트를 찾아주는 서비스입니다.이와 더불어 기숙사 내에 일어나는 모든 일을 학우들끼리 소통할 수 있는 커뮤니티 서비스도 함께 진행하고 있습니다.",
-      "useLanguage" : ["React","Style-component","Recoil","STOMP","Lottie","PWA"]
+      "useLanguage" : ["React","Style-component","Recoil","STOMP","Lottie","PWA"],
+      "gitLink" : "https://github.com/leesoyuun/GEEKS-FE",
+      "useLink" : "https://www.my-geeks.com/welcome"
     },
     {
         "name" : "OFI 👚",
         "description" : "OFI는 옷을 잘 입지 못하는 사람과 패션디자인과를 나왔지만 포트폴리오를 쌓을 곳이 없는 학생들의 모든 니즈를 만족시키기 위해 만든 서비스입니다.",
-        "useLanguage" : ["React","Style-component","S3","STOMP"]
+        "useLanguage" : ["React","Style-component","S3","STOMP"],
+        "gitLink" : "https://github.com/OutFitIn/OutFinIn-FE"
     },{
       "name" : "Portfolio 🖥️",
       "description" : "모든 이력, 프로젝트, 기술 발표 및 커뮤니티 운영 내용등을 담은 웹포트폴리오 입니다.",
-      "useLanguage" : ["React","Emotion","Json","Vite"]
+      "useLanguage" : ["React","Emotion","Json","Vite"],
+      "gitLink" : "https://github.com/leesoyuun/Portfolio"
     },{
       "name" : "천안시 대학생 대상 버스 이용률 데이터 분석 및 시각화  📈",
       "description" : "2023년 천안시 데이터 기반 시각화 아이디어 공모전에 참가하여 전국대학교 위치를 토대로 천안시 버스 정류장 위치 및 배차 간격 등의 데이터를 수집하여 전처리를 진행하였습니다.\n이후 천안시 버스를 증진시켜야하는 이유에 관하여 분석하여 최종 본선진출을 하였습니다.",
-      "useLanguage" : ["Python","Coolab"]
+      "useLanguage" : ["Python","Coolab"],
+      "gitLink" : "https://github.com/leesoyuun/Bus_Stop"
     },{
       "name" : "표정분석을 통한 v-log bgm 추천 🎧",
       "description" : "영상 속 인물의 표정을 분석하여 나온 수치를 토대로 가장 어울리는 BGM을 SpotifyAPI의 노래 분위기 지수에 맞게 추천해주는 시스템을 제작하였습니다.\n해당 프로젝트를 제작하여 논문으로 기재하였고, '대학생 작품경진대회'에 출품하여 최종 대상을 수상하였습니다.",

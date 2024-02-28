@@ -39,7 +39,7 @@ export const TotalProject = styled.div`
 `;
 export const DetailProject = styled.div`
   margin-left: 3rem;
-  width: calc((100vw - 1.5rem - 300px - 15%) / 2);
+  width: 405px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@ export const DetailProject = styled.div`
   ${media[2]} {
     margin-left: 1rem;
     margin-top: 1rem;
-    width: calc(100vw - 10% - 1.5rem);
+    width: calc(405px - 10%);
   }
   ${media[1]} {
     margin-left: 0rem;
@@ -96,4 +96,25 @@ export const Languages = styled.div`
 export const UseLanguage = styled.div`
   font-weight: 600;
   margin-left: 1rem;
+`;
+export const Links = styled.div`
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+`;
+export const LinkImg = styled.img`
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+`;
+export const LinkTxt = styled.div`
+  /* margin-right: 1.4rem; */
+  margin-left: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #525252;
+  cursor: pointer;
 `;
