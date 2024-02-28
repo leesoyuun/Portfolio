@@ -39,15 +39,15 @@ export const TotalProject = styled.div`
 `;
 export const DetailProject = styled.div`
   margin-left: 3rem;
-  max-width: calc((100vw - 12rem - 300px - 15%) / 2);
+  width: calc((100vw - 1.5rem - 300px - 15%) / 2);
   display: flex;
   justify-content: center;
-  align-items: center; /* Center vertically */
+  align-items: center;
   flex-direction: column;
   ${media[2]} {
     margin-left: 1rem;
     margin-top: 1rem;
-    /* width: calc(100vw - 10% - 1.5rem); */
+    width: calc(100vw - 10% - 1.5rem);
   }
   ${media[1]} {
     margin-left: 0rem;
