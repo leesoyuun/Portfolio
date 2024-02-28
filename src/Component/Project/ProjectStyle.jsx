@@ -56,8 +56,11 @@ export const DetailProject = styled.div`
 export const ProjectName = styled.div`
   font-weight: 600;
   margin-bottom: calc(1.5rem - 5px);
-  width: max-content;
+  width: calc(100% - 12%);
+  text-align: center;
+  overflow: visible;
   cursor: pointer;
+  box-sizing: border-box;
   &::after {
     display: block;
     content: "";
@@ -77,6 +80,7 @@ export const ProjectDescript = styled.div`
   line-height: 1.7rem;
   text-align: center;
   white-space: pre-wrap;
+  padding: 0px 6%;
 `;
 export const ProjectImg = styled.img`
   width: 250px;
@@ -95,7 +99,7 @@ export const Languages = styled.div`
 `;
 export const UseLanguage = styled.div`
   font-weight: 600;
-  margin-left: 1rem;
+  margin-right: 0.7rem;
 `;
 export const Links = styled.div`
   display: flex;
