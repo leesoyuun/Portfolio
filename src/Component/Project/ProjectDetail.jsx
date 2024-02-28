@@ -1,5 +1,5 @@
-import React, {useEffect} from "react";
-import { useParams,useLocation } from "react-router-dom";
+import React, {useEffect, useRef} from "react";
+import { useParams,useLocation, useNavigate } from "react-router-dom";
 import * as p from "./ProjectStyle";
 import * as c from "../Common/CommonStyle";
 import * as pd from "./ProjectDetailStyle";
@@ -8,10 +8,12 @@ import Header from "../Header/Header";
 import PhoneTool from "../../assets/img/common/phoneTool.jpg";
 import Check from "../../assets/img/common/check.png";
 import Geeks1 from "../../assets/img/project/geeks/geeks1.png";
+import GoBack from "../../assets/img/common/goback.png";
+
 const Geeks = () => {
   const projectParamsName = useParams();
   let ProjectPhoto = [Geeks1];
-
+  let navigate = useNavigate();
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -23,9 +25,14 @@ const Geeks = () => {
   if (!project) {
     return <div>프로젝트를 찾을 수 없습니다.</div>;
   }
+  
+  const handleBack = () => {
+    navigate(-1);
+  }
+
   return (
     <>
-      <Header />
+      <pd.Goback src={GoBack} onClick={()=>handleBack()}/>
       <pd.Center>
         <p.Whole>
           <pd.ProjectName>{project.name}</pd.ProjectName>

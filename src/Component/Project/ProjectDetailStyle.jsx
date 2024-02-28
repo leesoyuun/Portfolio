@@ -3,6 +3,9 @@ import styled from "@emotion/styled";
 const breakpoints = [480, 768, 992, 1280];
 const media = breakpoints.map((bp) => `@media (max-width: ${bp}px)`);
 
+export const Goback = styled.img`
+  padding: 36px 6% 30px 6%;
+`;
 export const Center = styled.div`
   display: flex;
   justify-content: center;
@@ -27,7 +30,7 @@ export const Date = styled.div`
   color: #111;
   font-weight: 400;
   padding-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 60px;
 `;
 export const ImgCenter = styled.div`
 
@@ -58,7 +61,7 @@ export const ReviewTitle = styled.div`
   margin-top: 3rem;
 `;
 export const DetailExplain = styled.div`
-  margin-left: 1rem;
+  margin-left: 5.5rem;
   max-width: calc(70% - 150px);
   ${media[2]} {
     max-width: 100%;
