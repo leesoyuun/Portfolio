@@ -5,16 +5,21 @@ import Velog from "../../assets/img/velog.svg";
 
 const Header = ({ scrollToSection, homeRef, aboutRef, projectRef, techSkillRef }) => {
   const [subMenuOpen, setSubMenuOpen] = useState(false);
+
+  const handleScrollMenu = (menu,sub) => {
+    scrollToSection(menu,sub);
+    setSubMenuOpen(false);
+  }
   return (
     <>
       {subMenuOpen && (
         <h.subMenuTotal>
           <h.close onClick={() => setSubMenuOpen(false)} />
           <h.subMenus>
-            <h.subMenu onClick={() => scrollToSection(homeRef,sub)}>{`HOME`}</h.subMenu>
-            <h.subMenu onClick={() => scrollToSection(aboutRef,sub)}>{`ABOUT ME`}</h.subMenu>
-            <h.subMenu onClick={() => scrollToSection(projectRef,sub)}>{`PROJECT`}</h.subMenu>
-            <h.subMenu onClick={() => scrollToSection(techSkillRef,sub)}>{`TECH SKILL`}</h.subMenu>
+            <h.subMenu onClick={() => handleScrollMenu(homeRef)}>{`HOME`}</h.subMenu>
+            <h.subMenu onClick={() => handleScrollMenu(aboutRef)}>{`ABOUT ME`}</h.subMenu>
+            <h.subMenu onClick={() => handleScrollMenu(projectRef)}>{`PROJECT`}</h.subMenu>
+            <h.subMenu onClick={() => handleScrollMenu(techSkillRef)}>{`TECH SKILL`}</h.subMenu>
           </h.subMenus>
           <h.subBottom></h.subBottom>
         </h.subMenuTotal>

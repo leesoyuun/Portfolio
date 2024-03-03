@@ -13,10 +13,8 @@ const Main = () => {
   const projectRef = useRef(null);
   const techSkillRef = useRef(null);
 
-  const scrollToSection = (ref,sub) => {
-    if(sub){
-      setSubMenuOpen(false);
-    }
+  const scrollToSection = (ref) => {
+
     if (ref.current !== null) {
       const offset = ref.current.offsetTop-94;
       window.scrollTo({
