@@ -25,7 +25,7 @@ const AboutMe = () => {
             <a.InfoText>{`@leesoyuun`}</a.InfoText>
           </a>
         </c.Flex>
-        <a.DetailAboutMe>{`안녕하세요. 소통을 중심으로 더 나은 코드를 구현하는 프론트엔드 개발자 이소윤입니다.\ndddd`}</a.DetailAboutMe>
+        <a.DetailAboutMe>{`💣 일상에서 마주한 불편함을 바탕으로 더 나은 사용자 경험을 이끌기 위해 노력합니다.\n\n📡 구현한 코드에 안주하지 않고 더 나은 코드를 구현하기 위해 다른 개발자들과의 소통을 즐깁니다.\n\n📝 문제를 해결하고, 거기에서 느끼는 성취감을 좋아합니다. \n\n💻 새롭게 알게 된 점을 정리하고, 기록하여 나의 것으로 만드는 것을 좋아합니다.`}</a.DetailAboutMe>
         <a.Title>{`이력`}</a.Title>
         {AboutMeJson.project.experience.map((val) => (
           <c.Flex>

@@ -38,7 +38,8 @@ export const InfoText = styled.div`
 export const DetailAboutMe = styled.div`
   margin-top: 1rem;
   white-space: pre-wrap;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
+  font-weight: 500;
 `;
 export const Title = styled.div`
   font-size: 1.1rem;
