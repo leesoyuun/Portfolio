@@ -56,7 +56,6 @@ export const DetailProject = styled.div`
 export const ProjectName = styled.div`
   font-weight: 600;
   margin-bottom: calc(1.5rem - 5px);
-  width: calc(100% - 12%);
   text-align: center;
   overflow: visible;
   cursor: pointer;
@@ -104,7 +103,7 @@ export const UseLanguage = styled.div`
 export const Links = styled.div`
   display: flex;
   margin-top: 1rem;
-  justify-content: space-between;
+  justify-content: ${(props)=>props.isCenter ? 'space-between' : 'center'};
   align-items: center;
   width: 60%;
 `;

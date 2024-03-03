@@ -10,6 +10,7 @@ import Cheonan from "../../assets/img/project/cheonan/cheonanData.jpeg";
 import Music from "../../assets/img/project/music/music.jpeg";
 import Git from "../../assets/img/github.svg";
 import Link from "../../assets/img/link.png";
+import Paper from "../../assets/img/common/paper.svg";
 
 const Project = () => {
   let TitleImg = [Geeks, Ofi, Portfolio, Cheonan, Music];
@@ -41,7 +42,7 @@ const Project = () => {
                   <p.UseLanguage>{language}</p.UseLanguage>
                 ))}
               </p.Languages>
-              <p.Links>
+              <p.Links isCenter={project?.useLink}>
                 {project?.gitLink && (
                   <a
                     href={project?.gitLink}
@@ -61,6 +62,16 @@ const Project = () => {
                     <p.LinkImg src={Link} />
                     <p.LinkTxt>{`Live Demo`}</p.LinkTxt>
                   </a>
+                )}
+                {project?.thesis && (
+                  <a
+                  href={project?.thesis}
+                  target="_blank"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <p.LinkImg src={Paper} />
+                  <p.LinkTxt>{`논문 링크`}</p.LinkTxt>
+                </a>
                 )}
               </p.Links>
             </p.DetailProject>

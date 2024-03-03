@@ -8,7 +8,7 @@
       "useLink" : "https://www.my-geeks.com/welcome"
     },
     {
-        "name" : "OFI 👚",
+        "name" : "OFI 👗",
         "description" : "OFI는 옷을 잘 입지 못하는 사람과 패션디자인과를 나왔지만 포트폴리오를 쌓을 곳이 없는 학생들의 모든 니즈를 만족시키기 위해 만든 서비스입니다.",
         "useLanguage" : ["React","Style-component","S3","STOMP"],
         "gitLink" : "https://github.com/OutFitIn/OutFinIn-FE"
@@ -19,14 +19,16 @@
       "gitLink" : "https://github.com/leesoyuun/Portfolio",
       "useLink" : "https://leesoyun-portfolio.vercel.app/"
     },{
-      "name" : "천안시 대학생 대상 버스 이용률 데이터 분석 및 시각화  📈",
+      "name" : "버스 이용률 데이터 분석 및 시각화  📈",
       "description" : "2023년 천안시 데이터 기반 시각화 아이디어 공모전에 참가하여 전국대학교 위치를 토대로 천안시 버스 정류장 위치 및 배차 간격 등의 데이터를 수집하여 전처리를 진행하였습니다.\n이후 천안시 버스를 증진시켜야하는 이유에 관하여 분석하여 최종 본선진출을 하였습니다.",
       "useLanguage" : ["Python","Coolab"],
-      "gitLink" : "https://github.com/leesoyuun/Bus_Stop"
+      "gitLink" : "https://github.com/leesoyuun/Bus_Stop",
+      "useLink" : "https://www.canva.com/design/DAFs5NKK2eo/6iNnNVZPToEh_xDZ55E68Q/edit?utm_content=DAFs5NKK2eo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     },{
       "name" : "표정분석을 통한 v-log bgm 추천 🎧",
       "description" : "영상 속 인물의 표정을 분석하여 나온 수치를 토대로 가장 어울리는 BGM을 SpotifyAPI의 노래 분위기 지수에 맞게 추천해주는 시스템을 제작하였습니다.\n해당 프로젝트를 제작하여 논문으로 기재하였고, '대학생 작품경진대회'에 출품하여 최종 대상을 수상하였습니다.",
-      "useLanguage" : ["Python","Coolab", "SpotifyAPI"]
+      "useLanguage" : ["Python","Coolab", "SpotifyAPI"],
+      "thesis" : "https://www-dbpia-co-kr.libproxy.smu.ac.kr/journal/articleDetail?nodeId=NODE11142936"
     }
   ]
 }

@@ -11,13 +11,9 @@ export const Center = styled.div`
   justify-content: center;
   padding: 0px 20% 5% 20%;
   min-height: calc(100vh - 200px);
-  margin-top: 150px;
   width: 100%;
   ${media[1]} {
     padding: 0px 0px 5% 0px;
-  }
-  ${media[2]} {
-    margin-top: 100px;
   }
 `;
 export const ProjectName = styled.div`
@@ -55,6 +51,9 @@ export const InnerImg = styled.img`
     margin: auto 0;
   }
 `;
+export const DesktopImg = styled.img`
+  width: 50%;
+`;
 
 export const ReviewTitle = styled.div`
   font-size: 2rem;
@@ -65,8 +64,7 @@ export const DetailExplain = styled.div`
   max-width: calc(70% - 150px);
   ${media[2]} {
     max-width: 100%;
-    margin-right: 1rem;
-    margin-top: 1rem;
+    margin: 1rem;
   }
 `;
 export const Title = styled.div`

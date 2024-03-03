@@ -8,11 +8,16 @@ import Header from "../Header/Header";
 import PhoneTool from "../../assets/img/common/phoneTool.jpg";
 import Check from "../../assets/img/common/check.png";
 import Geeks1 from "../../assets/img/project/geeks/geeks1.png";
+import OFI from "../../assets/img/project/ofi/useImg.png";
+import Portfolio from "../../assets/img/project/portfolio/useImg.png";
+// import PortfolioDesk from "../../assets/img/project/portfolio/useImgDesk.png";
+import Cheonan from "../../assets/img/project/cheonan/map.png";
+import Music from "../../assets/img/project/music/useImg.png";
 import GoBack from "../../assets/img/common/goback.png";
 
 const Geeks = () => {
   const projectParamsName = useParams();
-  let ProjectPhoto = [Geeks1];
+  let ProjectPhoto = [Geeks1,OFI,Portfolio,Cheonan,Music];
   let navigate = useNavigate();
   const { pathname } = useLocation();
 
@@ -38,8 +43,8 @@ const Geeks = () => {
           <pd.ProjectName>{project.name}</pd.ProjectName>
               <pd.Date>{project.date}</pd.Date>
               <c.FlexBetween>
-                <pd.PhoneTool src={PhoneTool} />
-                <pd.InnerImg src={Geeks1} />
+              <pd.PhoneTool src={PhoneTool} />
+                <pd.InnerImg src={ProjectPhoto[project?.photoNum]} />
                 <pd.DetailExplain>
                   {project.details?.map((detail) => (
                     <>
