@@ -26,8 +26,8 @@ export const Name = styled.div`
 `;
 
 export const Icon = styled.img`
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 `;
 export const InfoText = styled.div`
   display: flex;

@@ -64,13 +64,16 @@ export const DetailExplain = styled.div`
   max-width: calc(70% - 150px);
   ${media[2]} {
     max-width: 100%;
-    margin: 1rem;
+    margin: 0px 2rem;
   }
 `;
 export const Title = styled.div`
   font-size: 1.15rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  ${media[2]} {
+    margin-top: 30px;
+  }
 `;
 export const Descript = styled.div`
   color: #7f7b7b;

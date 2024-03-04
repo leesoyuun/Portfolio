@@ -11,6 +11,7 @@ import Music from "../../assets/img/project/music/music.jpeg";
 import Git from "../../assets/img/github.svg";
 import Link from "../../assets/img/link.png";
 import Paper from "../../assets/img/common/paper.svg";
+import Plus from "../../assets/img/common/plus.svg";
 
 const Project = () => {
   let TitleImg = [Geeks, Ofi, Portfolio, Cheonan, Music];
@@ -74,6 +75,11 @@ const Project = () => {
                 </a>
                 )}
               </p.Links>
+              {
+                  <p.MoreInfoBox>
+                    <div onClick={() => handleClick(project.name)}>{`More Info`}</div>
+                  </p.MoreInfoBox>
+                }
             </p.DetailProject>
           </p.TotalProject>
         ))}

@@ -25,9 +25,10 @@ export const Headername = styled.div`
     margin-top: 2rem;
   }
 `;
+export const MoreTxt = styled.div``;
 export const HeaderDescript = styled.div`
   margin-top: 1rem;
-  color : #707070;
+  color: #707070;
   font-weight: 500;
 `;
 export const TotalProject = styled.div`
@@ -67,7 +68,7 @@ export const ProjectName = styled.div`
     display: block;
     content: "";
     margin-top: 5px;
-    border-bottom: solid 4px #5144EB;
+    border-bottom: solid 4px #5144eb;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
   }
@@ -106,7 +107,7 @@ export const UseLanguage = styled.div`
 export const Links = styled.div`
   display: flex;
   margin-top: 1rem;
-  justify-content: ${(props)=>props.isCenter ? 'space-between' : 'center'};
+  justify-content: ${(props) => (props.isCenter ? "space-between" : "center")};
   align-items: center;
   width: 60%;
 `;
@@ -124,3 +125,20 @@ export const LinkTxt = styled.div`
   color: #525252;
   cursor: pointer;
 `;
+export const MoreInfoBox = styled.div`
+  border-radius: 16px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+  padding: 5px 15px;
+  margin-top: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: #fff;
+    color: #333;
+  }
+`;
+export const MoreInfoText = styled.div``;
