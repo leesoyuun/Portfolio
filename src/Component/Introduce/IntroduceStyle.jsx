@@ -75,7 +75,7 @@ export const LiquidShape = styled.div`
 export const TechSkillTop = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 3rem;
   gap: 15px;
 `;
 export const TechSKillTxt = styled.div`
