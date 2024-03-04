@@ -17,6 +17,9 @@ export const Headername = styled.div`
   font-weight: 700;
   font-size: 1.3rem;
   margin-bottom: 2rem;
+  ${media[2]} {
+    margin-top: 2.3rem;
+  }
 `;
 export const TotalTechSkill = styled.div`
   display: flex;

@@ -72,3 +72,20 @@ export const LiquidShape = styled.div`
     display: none;
   }
 `;
+export const TechSkillTop = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 15px;
+`;
+export const TechSKillTxt = styled.div`
+  color: #333;
+  margin-top: 5px;
+  font-weight: 700;
+`;
+export const TechSKill = styled.img`
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  margin-right: 10px;
+`;
