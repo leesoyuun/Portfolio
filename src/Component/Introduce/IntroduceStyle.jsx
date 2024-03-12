@@ -1,8 +1,19 @@
 import styled from "@emotion/styled";
 const breakpoints = [480, 768, 992, 1280];
 const media = breakpoints.map((bp) => `@media (max-width: ${bp}px)`);
-import Leesoyuun from "../../assets/img/introduce/leesoyuun.jpeg";
 import Leesoyuun2 from "../../assets/img/introduce/leesoyuun4.jpeg";
+
+export const Center = styled.div`
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  height: calc(100vh - 101px);
+  width: 100%;
+  margin-top: 100px;
+  ${media[2]} {
+    flex-direction: column;
+  }
+`;
 
 export const Whole = styled.div`
   display: flex;
@@ -45,7 +56,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   ${media[2]} {
-    display: none;
+    margin-top: 2.5rem;
   }
 `;
 export const LiquidShape = styled.div`
@@ -67,9 +78,6 @@ export const LiquidShape = styled.div`
     100% {
       border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
-  }
-  ${media[2]} {
-    display: none;
   }
 `;
 export const TechSkillTop = styled.div`
